@@ -131,11 +131,29 @@ $(function () {
             series: [{
                 type: 'line',
                 data: high,
-                color:"#ffb74d"
+                color:"#ffb74d",
+                symbol:'circle',
+                symbolSize:8,
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'top',
+                        color:'#333',
+                    }
+                },
             },{
                 type: 'line',
                 data: low,
-                color:"#4fc3f7"
+                color:"#4fc3f7",
+                symbol:'circle',
+                symbolSize:8,
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'bottom',
+                        color:'#333',
+                    }
+                },
             }]
         };
         myChart.setOption(option);
